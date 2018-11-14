@@ -1,0 +1,607 @@
+/* fuentes:
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+/* colores
+    gris claro: #F2F0F0
+    azul casi oscuro: #0279B0
+    celeste claro: #D5EDF8
+*/
+body{
+    background-color: rgb(184, 225, 245);
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+} 
+header a{
+    background-color: #F2F0F0;
+    font-family: 'Roboto', sans-serif;
+}
+.contact-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    align-items: center;
+    background-color: #F2F0F0;
+}
+
+header{
+    background-color: #0279B0;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid black;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+}
+.cabecera-logo{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #0279B0;
+    height: 50px;
+    align-items: center;
+}
+.cabecera-search h5{
+    margin: 0;
+}
+.cabecera-search{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.search-boxt{
+    display: flex;
+}
+.search-boxt h5{
+    padding-right: 8px;
+}
+.cabecera-logIn{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    align-items: center;
+}
+.principal-box{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+    margin: 15px 15px 0 15px; 
+    height: 300px;
+    grid-template-areas: "detalles central venta"
+}
+.a{grid-area: detalles;}
+.b{grid-area: central;}
+.product.prueba{
+    display: none;
+}
+.c{grid-area: venta;}
+.a,.b{
+    align-items: center;
+    text-align: center;
+    padding: 15px 15px 0px 15px;
+}
+.box{
+    /* background: rgb(245, 245, 245); */
+    background: white;
+    border-radius:  5px;
+}
+.box1 img{
+    border: 1px solid black;
+}
+.box2 img{
+    width: fit-content;
+}
+.details-title, .product{
+    font-size: 1.3em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 5px 0px;
+    text-align: center;
+}
+.c{
+    /* border: 1px solid black; */
+    /* align-items: center; */
+    text-align: left; 
+    padding: 15px 15px 0px 15px;
+}
+.button-sell{
+    justify-content: center;
+    text-align: center;
+    margin: 4px 0px;
+}
+.venta{
+    border-radius: 10px;
+    /* background: rgba(33, 88, 114, 0.966); */
+    background: #0279B0;
+    padding: 7px 7px;
+    font-size: 1.2em;
+    /* font-weight: bold; */
+    color: white;
+}
+.secundary-box{
+    display: grid;
+    margin: 0px 15px 15px 15px;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Open Sans', sans-serif;
+    grid-template-areas: "descripcion1 descripcion2"
+}
+.d{grid-area: descripcion1;}
+.e{grid-area: descripcion2;}
+.title2{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 15px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+    border-radius: 5px;
+}
+.list{
+    margin: 1em;
+    font-size: .8em;
+}
+.details-title{
+    margin: .5em 0 0 1.6em;
+    font-size: 1.3em;
+    display: flex;
+}
+.bc{
+    border: 1px solid black;
+}
+
+/* INICIO CAJA COMENTARIOS */
+.third-max{
+    margin: 0 15px 0 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+}
+.third-box{
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    background: white;
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 30px 30px 1fr 1fr 35px;
+    grid-template-areas: "a c c c c"   
+                         "b c c c c"
+                         "d d d d d"
+                         "e e e e e"
+                         "e e e e e"    
+                         "f f g h h";
+    grid-gap: 3px;
+}
+.user-foto{
+    grid-area: a;
+    margin: 4px 0 0 4px;
+}
+.user-foto img{
+    border-radius: 50%;
+}
+.user-name{
+    grid-area: b;
+    text-align: center;
+}
+.user-name p{
+    margin: 0;
+    font-size: .7em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.comment-short{
+    grid-area: c;
+    text-align: center;
+}
+.comment-short h2{
+    margin: 4px;
+}
+.bc2{
+    grid-area: d;
+    text-align: center;
+}
+.bc3{
+    grid-area: e;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.bc3 a{
+    margin: 10px;
+    
+}
+.like{
+    grid-area: f;
+}
+.like img{
+    margin:3px;
+}
+.shareSN{
+    grid-area: g;
+}
+.social{
+    display: flex;
+}
+.social-link{
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    margin: 0 5px;
+    background-size: 28px 28px;
+}
+.social-link.facebook{
+    background-image: url('../imagenes/social/facebook.JPG');
+}
+.social-link.twitter{
+    background-image: url('../imagenes/social/twitter.png');
+}
+.date{
+    grid-area: h;
+    text-align: end;
+}
+.fecha{
+    margin: 3px;
+}
+/* FIN CAJA COMENTARIOS */
+/* INICIO CAJA PREGUNTAS FRECUENTAS */
+.fourth-max{
+    margin: 0 15px 0 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    margin-bottom: 10px;
+}
+.fourth-box{
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    background: white;
+    display: grid;
+    width: 610px;
+    height: 250px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 30px 1fr 1fr 35px;
+    grid-template-areas: "l n n n n"
+                         "m n n n n"
+                         "o o o o o"
+                         "o o o o o"
+                         "p p . q q";
+    grid-gap: 3px;
+}
+.user-foto-4{
+    grid-area: l;
+    margin: 4px 0 0 4px;
+    text-align: center;
+}
+.user-foto-4 img{
+    border-radius: 50%;
+    margin-top: 7px;
+}
+.user-name-4{
+    grid-area: m;
+    text-align: center;
+}
+.user-name-4 p{
+    margin: 0;
+    font-size: .8em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 7px;
+}
+.comment-short-4{
+    grid-area: n;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comment-short-4 h2{
+    margin: 4px;
+}
+.bc3-4{
+    grid-area: o;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.bc3-4 a{
+    margin: 10px;
+    
+}
+.soport-tecnic-4{
+    grid-area: p;
+    display: flex;
+    margin: 0 0 3px 10px;
+    align-items: center;
+}
+.soport-tecnic-4 img{
+    margin:3px;
+}
+.date-4{
+    grid-area: q;
+    text-align: end;
+}
+.fecha-4{
+    margin: 3px;
+}
+/* FIN CAJA PREGUNTAS FRECUENTES */
+/* INICIO CONTACTO Y FOOTER */
+.contact{
+    display: flex;
+    background-color: #0279B0;
+}
+.contact-box1{
+    width: 50%;
+    border: 1px solid black;;
+    text-align: center;
+}
+.contact-box-client{
+    margin-bottom: 1em;
+}
+.client-info h5{
+    margin: 0;
+}
+.footer{
+    background-color:#1b2127;
+    padding: 1px;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+.contact-box2{
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+.social-link1{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+.social-link1.facebook{
+    background-image: url('../imagenes/social/facebook.svg');
+}
+.social-link1.twitter{
+    background-image: url('../imagenes/social/twitter.svg');
+}
+.social-link1.instagram{
+    background-image: url('../imagenes/social/instagram.svg');
+}
+.social-link1.github{
+    background-image: url('../imagenes/social/github.svg');
+}
+
+/* FIN CONTACTO Y FOOTER */
+@media screen and (max-width:1024px){
+    .search-boxt input{
+        width: 360px;
+    }
+    .principal-box{
+        height: auto;
+    }
+    .fecha{
+        font-size: .9em;
+    }
+    .third-box{
+        border: 1px solid black;
+    }
+    .fourth-box{
+        border: 1px solid black;
+    }
+    /* Inicio footer */
+    .footer p{
+        margin: .5em;
+    }
+    /* fin footer */
+}
+@media screen and (max-width: 768px){
+    .search-boxt input{
+        width: 220px;
+    }
+    .contact-top{
+        display: initial;
+        font-size: .9em;
+        text-align: center;
+    }
+    .contact-top p{
+        background-color: #F2F0F0;
+        height: max-content;
+        margin: 0;
+    }
+    .cabecera-logIn h2{
+        font-size: .9em;
+    }
+    .comment-short {
+        font-size: .7em;
+    }
+    .bc2 img{
+        height: 20px;
+    }
+    .bc3 a{
+        margin: 2px;
+        font-size: .9em;
+    }
+    .third-box{
+        width: 300px;
+        height: 300px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 50px 30px 20px 1fr 1fr 35px 15px;
+        grid-template-areas: "a c c c c"   
+                             "b c c c c"
+                             "d d d d d"
+                             "e e e e e"
+                             "e e e e e"    
+                             "f f g g g"
+                             "h h h h h";
+        grid-gap: 3px;  
+
+    }
+    .social{
+        justify-content: flex-end;
+    }
+    .date{
+        grid-area: h;
+        font-size: 1em;
+        text-align: center;
+        position: relative;
+    }
+    .fecha{
+        position: absolute;
+        top: -10px;
+        right: 30%;
+    }
+    /* Inicio footer */
+    .footer p{
+        margin: .2em;
+        font-size: .9em;
+    }
+    /* fin footer */
+}
+@media screen and (max-width: 480px){
+    .cabecera {
+        display: initial;
+        justify-content: center;
+    }
+    .cabecera-logIn,.cabecera-logo,.cabecera-search{
+        justify-content: center;
+    }
+    .search-boxt{
+        width: 100%;
+        justify-content: center;
+    }
+    .principal-box{
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        /* grid-template-rows: ; */
+        grid-gap: 5px;
+        margin: 10px 2px 0 2px; 
+        height: auto;
+        grid-template-areas: "central venta venta"
+                             "detalles detalles detalles";
+    }
+    .box2 img{
+        width: initial;
+        /* height: 200px; */
+    }
+    .box.a{
+        padding: 3px 3px 5px 3px;
+    }
+    .details-title{
+        margin: 2px;
+        justify-content: center;
+
+    }
+    .title2{
+        font-size: 1.5em;
+    }
+    .list{
+        margin: 0px 0px 0px 20px;
+        padding: 0px;
+    }
+    .tb1{
+        display: none;
+    }
+    .tb2{
+        display: none;
+    }
+    .comment-short-4{
+        text-align: center;
+    }
+    .comment-short-4 h2{
+        font-size: 1em;
+    }
+    .user-foto-4 img {
+        margin-top: 0px;
+    }
+    .user-name-4 p {
+        margin: 0;
+        font-size: .75em;
+        font-weight: bold;
+        line-height: 1.2;
+        /* margin-top: 0px; */
+    }
+    .bc3-4{
+        font-size: .9em;
+    }
+    /* inicio footer */
+    .contact{
+        display: block;
+    }
+    .contact-box1{
+        width: 100%;
+    }
+    .contact-box2{
+        width: 100%;        
+    }
+    .socialprincipal{
+        margin-bottom: 1.2em;
+    }
+    .footer p{
+        margin: .1em;
+        font-size: .7em;
+    }
+    /* fin footer */
+}
+@media screen and (max-width: 320px){
+    .search-boxt{
+        display: initial;
+        text-align: center;
+    }
+    .principal-box{
+        display:grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: ; */
+        grid-gap: 5px;
+        margin: 10px 2px 0 2px; 
+        height: auto;
+        grid-template-areas: "central"
+                             "venta"
+                             "detalles";
+    }
+    .product.prueba{
+        display: inline;
+    }
+    .product.prueba2{
+        display: none;
+    }
+    .title2{
+        margin: 3px;
+        padding: 0px;
+        font-size: 1.2em;
+    }
+    .details-title{
+        font-size: 1.2em;
+    }
+    .secundary-box{
+        display: grid;
+        margin: 0px 3px;
+        grid-gap: 3px;
+        grid-template-columns: 1fr;
+        font-family: 'Open Sans', sans-serif;
+        grid-template-areas: "descripcion1" 
+                             "descripcion2";
+    }
+    .third-max{
+        margin: 0 3px;
+        padding: 0px;
+    }
+    .fourth-max{
+        display: block;
+        margin: 3px;
+        padding: 0px;
+        grid-gap: 3px;
+    }
+    .fourth-box{
+        width: auto;
+        height: auto;
+    }
+}

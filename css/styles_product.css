@@ -532,6 +532,31 @@ header{
     .bc3-4{
         font-size: .9em;
     }
+    /* inicio caja 4 */
+    .fourth-box{
+        height: auto;
+        grid-template-rows: 50px 30px 1fr 1fr 35px 15px;
+        grid-template-areas: "l n n n n"
+                             "m n n n n"
+                             "o o o o o"
+                             "o o o o o"
+                             "p p p p p"
+                             "q q q q q";
+    }
+    .soport-tecnic-4{
+        justify-content: center;
+    }
+    .date-4{
+        position: relative;
+    }
+    .fecha-4{
+        position: absolute;
+        top: -10px;
+        right: 30%;
+    }
+    /* fin caja 4 */
+
+
     /* inicio footer */
     .contact{
         display: block;
@@ -600,8 +625,27 @@ header{
         padding: 0px;
         grid-gap: 3px;
     }
+    /* inicio caja 4 */
     .fourth-box{
-        width: auto;
         height: auto;
+        width: auto;
+        grid-template-rows: 50px 30px 1fr 1fr 35px;
+        grid-template-areas:    "l n n n n"
+                                "m n n n n"
+                                "o o o o o"
+                                "o o o o o"
+                                "p p . q q";
     }
+    .soport-tecnic-4{
+        justify-content: center;
+    }
+    .date-4{
+        position: relative;
+    }
+    .fecha-4{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    /* fin caja 4 */
 }
